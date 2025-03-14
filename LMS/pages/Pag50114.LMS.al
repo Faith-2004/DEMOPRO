@@ -30,6 +30,7 @@ page 50114 LMS
                     RunObject = page "BookList";
 
 
+
                 }
                 action(Authors)
                 {
@@ -80,13 +81,20 @@ page 50114 LMS
         {
             group(Reports)
             {
-                action("+books")
+                action("sbooks")
                 {
                     ApplicationArea = Basic, Suite;
 
                     RunObject = report "Book report";
                 }
             }
+
+            action("BookLendings")
+            {
+                ApplicationArea = Basic, Suite;
+                RunObject = report "Book lendings report";
+            }
+
 
 
         }
@@ -115,6 +123,13 @@ page 50114 LMS
                 ApplicationArea = All;
                 RunObject = page "Book Card";
                 RunPageMode = Create;
+            }
+            action("Staff")
+            {
+                ApplicationArea = All;
+                RunObject = page "PatronsCard";
+                RunPageMode = Create;
+
             }
         }
     }

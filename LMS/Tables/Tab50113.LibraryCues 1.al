@@ -22,6 +22,18 @@ table 50113 "Library Cues"
             CalcFormula = Count("Book" WHERE("Borrowed" = const(false)));
             Caption = 'Available Books';
         }
+        field(4; "Rejected Approvals"; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = count("Book Lending" WHERE(Status = const(RejectedApprovals)));
+            Caption = 'Rejected Approvals';
+        }
+        field(5; "Pending Approvals"; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = count("Book Lending" WHERE(Status = const(PendingApproval)));
+            Caption = 'Rejected Books';
+        }
 
     }
     keys

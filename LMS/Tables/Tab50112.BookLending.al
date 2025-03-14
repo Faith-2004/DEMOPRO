@@ -50,8 +50,8 @@ table 50112 "Book Lending"
         }
         field(9; Status; Option)
         {
-            OptionMembers = Open,PendingApproval,Approved,Rejected;
-            OptionCaption = 'Open, Pending Approval,Approved,Rejected';
+            OptionMembers = Open,PendingApproval,Approved,RejectedApprovals;
+            OptionCaption = 'Open, Pending Approval,Approved,RejectedApprovals';
         }
         field(10; Fine; Decimal)
         {

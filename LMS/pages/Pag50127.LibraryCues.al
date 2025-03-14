@@ -23,6 +23,18 @@ page 50127 "Library Cues"
                     ToolTip = 'Specifies the value of the Total Borrowed Books field.', Comment = '%';
                     DrillDownPageId = "BookLending List";
                 }
+                field("Rejected Books"; Rec."Rejected Approvals")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Total Borrowed Books field.', Comment = '%';
+                    DrillDownPageId = "BookLending List";
+                }
+                field("Pending Approvals"; Rec."Pending Approvals")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Total Borrowed Books field.', Comment = '%';
+                    DrillDownPageId = "BookLending List";
+                }
             }
         }
     }
