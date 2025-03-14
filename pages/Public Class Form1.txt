@@ -1,0 +1,21 @@
+Public Class Form1
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+        ' Validate input
+        Dim maths, english, science As Integer
+        If Not Integer.TryParse(txtMaths.Text, maths) OrElse Not Integer.TryParse(txtEnglish.Text, english) OrElse Not Integer.TryParse(txtScience.Text, science) Then
+            MessageBox.Show("Please enter valid marks.")
+            Exit Sub
+        End If
+
+
+
+    End Sub
+
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
+
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+End Class

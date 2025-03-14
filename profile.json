@@ -1,0 +1,10 @@
+{
+    "profiles": [
+        {
+            "profileDescription": "My RoleCenter",
+            "profileID": "TestRole",
+            "roleCenter": "50101",
+            "enabled": true
+        }
+    ]
+}
