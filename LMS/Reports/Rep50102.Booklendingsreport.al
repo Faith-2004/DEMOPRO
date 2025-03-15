@@ -37,6 +37,8 @@ report 50102 "Book lendings report"
             column(Fine; Fine)
             {
             }
+            column(Logo; CompanyInformation.Picture)
+            { }
         }
     }
     requestpage
@@ -57,4 +59,15 @@ report 50102 "Book lendings report"
             }
         }
     }
+    trigger OnInitReport()
+    begin
+
+        CompanyInformation.GET();
+
+        CompanyInformation.CalcFields(Picture)
+
+    end;
+
+    var
+        CompanyInformation: Record "Company Information";
 }

@@ -9,7 +9,7 @@
       <am:Name>MSRB</am:Name>
       <am:Version>15.0.20283.0</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2025-03-14T07:56:18.8988538Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2025-03-15T08:52:56.6065795Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -698,9 +698,9 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>0.51333in</Top>
+            <Top>1.38in</Top>
             <Left>0.38333in</Left>
-            <Height>1.01667in</Height>
+            <Height>1.01666in</Height>
             <Width>9.305in</Width>
             <Style>
               <Border>
@@ -708,8 +708,54 @@
               </Border>
             </Style>
           </Tablix>
+          <Textbox Name="Textbox22">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Book Lending Report</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox22</rd:DefaultName>
+            <Top>1.89653cm</Top>
+            <Left>9.42869cm</Left>
+            <Height>0.6cm</Height>
+            <Width>7.5565cm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Image Name="Image1">
+            <Source>Database</Source>
+            <Value>=First(Fields!Logo.Value, "DataSet_Result")</Value>
+            <MIMEType>image/jpeg</MIMEType>
+            <Sizing>FitProportional</Sizing>
+            <Top>0cm</Top>
+            <Left>0cm</Left>
+            <Height>1.91233cm</Height>
+            <Width>2.90299cm</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
         </ReportItems>
-        <Height>6.77333cm</Height>
+        <Height>8.6137cm</Height>
         <Style />
       </Body>
       <Width>27.6987cm</Width>
@@ -799,6 +845,9 @@ End Function
         </Field>
         <Field Name="FineFormat">
           <DataField>FineFormat</DataField>
+        </Field>
+        <Field Name="Logo">
+          <DataField>Logo</DataField>
         </Field>
       </Fields>
       <Query>
