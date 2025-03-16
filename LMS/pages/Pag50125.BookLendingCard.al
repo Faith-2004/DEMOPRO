@@ -63,4 +63,41 @@ page 50125 "BookLending Card"
             }
         }
     }
+    actions
+    {
+        area(Processing)
+        {
+
+            action(Submit)
+            {
+                Visible = rec.status = Rec.status::open;
+                trigger OnAction()
+                var
+                    BkLending: Record "Book Lending";
+                begin
+                    rec.Status := BkLending.Status::PendingApproval;
+                end;
+            }
+            action(Approve)
+            {
+                Visible = rec.status = Rec.status::PendingApproval;
+                trigger OnAction()
+                var
+                    BkLending: Record "Book Lending";
+                begin
+                    rec.Status := BkLending.Status::Approved;
+                end;
+            }
+            action(Reject)
+            {
+                Visible = rec.status = Rec.status::PendingApproval;
+                trigger OnAction()
+                var
+                    BkLending: Record "Book Lending";
+                begin
+                    rec.Status := BkLending.Status::RejectedApprovals;
+                end;
+            }
+        }
+    }
 }

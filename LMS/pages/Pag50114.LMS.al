@@ -61,9 +61,31 @@ page 50114 LMS
                     ApplicationArea = All;
                     Caption = 'Book Lending';
                     RunObject = page "BookLending List";
+                    RunPageView = where(status = filter(open));
                 }
-            }
+                action(OpenBookLendingList)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Open Book Lending';
+                    RunObject = page "BookLending List";
+                    RunPageView = where(status = filter(open));
+                }
+                action(PendingBookLendingList)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Pending Approval Book Lending';
+                    RunObject = page "BookLending List";
+                    RunPageView = where(status = filter(PendingApproval));
+                }
+                action(ApprovedBookLendingList)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Approved Approval Book Lending';
+                    RunObject = page "BookLending List";
+                    RunPageView = where(status = filter(Approved));
+                }
 
+            }
         }
         area(Embedding)
         {

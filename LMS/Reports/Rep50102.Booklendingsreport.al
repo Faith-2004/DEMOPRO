@@ -7,6 +7,7 @@ report 50102 "Book lendings report"
     {
         dataitem(BookLending; "Book Lending")
         {
+            RequestFilterFields = "Boook ID", "Borrower ID", Status;
             column(LendingID; "Lending ID")
             {
             }
@@ -39,6 +40,24 @@ report 50102 "Book lendings report"
             }
             column(Logo; CompanyInformation.Picture)
             { }
+            column(NAME; CompanyInformation.NAME)
+            {
+
+            }
+            column(Address; CompanyInformation.Address)
+            {
+
+            }
+            column(seq; seq)
+            {
+
+            }
+            trigger OnAfterGetRecord()
+            var
+                myInt: Integer;
+            begin
+                seq := seq + 1;
+            end;
         }
     }
     requestpage
@@ -70,4 +89,5 @@ report 50102 "Book lendings report"
 
     var
         CompanyInformation: Record "Company Information";
+        seq: Integer;
 }
