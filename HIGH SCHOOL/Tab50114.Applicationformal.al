@@ -83,7 +83,7 @@ table 50114 "Application form.al"
         {
             Caption = 'Medical Conditions';
         }
-        field(20; Disabled; Option)
+        field(20; Disability; Option)
         {
             OptionMembers = Yes,No;
             OptionCaption = 'Yes,No';
@@ -124,7 +124,7 @@ table 50114 "Application form.al"
         {
             Caption = 'Date of Submission';
         }
-        field(30; "ApplicationNumber"; Code[50])
+        field(30; "ApplicationNumber"; Date)
         {
             Caption = 'Application Number';
         }
