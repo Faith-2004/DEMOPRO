@@ -56,6 +56,7 @@ page 50124 "BookLending List"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Status field.', Comment = '%';
+                    Editable = false;
                 }
             }
         }

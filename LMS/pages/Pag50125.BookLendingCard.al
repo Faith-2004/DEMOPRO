@@ -70,16 +70,21 @@ page 50125 "BookLending Card"
 
             action(Submit)
             {
-                Visible = rec.status = Rec.status::open;
+                Caption = 'Submit';
+                ApplicationArea = All;
+                Image = SendApprovalRequest;
+                Visible = (Rec.Status = Rec.Status::Open);
                 trigger OnAction()
-                var
-                    BkLending: Record "Book Lending";
                 begin
-                    rec.Status := BkLending.Status::PendingApproval;
+                    Rec.Status := Rec.Status::PendingApproval;
+                    Rec.Modify();
                 end;
             }
             action(Approve)
             {
+                Caption = 'Approved';
+                ApplicationArea = all;
+                Image = SendConfirmation;
                 Visible = rec.status = Rec.status::PendingApproval;
                 trigger OnAction()
                 var
@@ -90,6 +95,9 @@ page 50125 "BookLending Card"
             }
             action(Reject)
             {
+                Caption = 'Reject';
+                ApplicationArea = all;
+                Image = SendConfirmation;
                 Visible = rec.status = Rec.status::PendingApproval;
                 trigger OnAction()
                 var
