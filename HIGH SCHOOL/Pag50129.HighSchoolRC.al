@@ -27,7 +27,14 @@ page 50129 "HighSchool RC"
                     Caption = 'ApplicationList';
                     RunObject = page "ApplicationForm List";
                 }
+                action(AdmmittedStudents)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Admitted Students';
+                    RunObject = page "ApplicationForm List";
+                }
             }
+
         }
 
     }

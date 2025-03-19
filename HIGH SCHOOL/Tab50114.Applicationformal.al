@@ -5,7 +5,7 @@ table 50114 "Application form.al"
 
     fields
     {
-        field(1; "Application Number"; Integer)
+        field(1; "Application Number"; Code[50])
         {
             Caption = 'Application Number';
         }
@@ -124,7 +124,7 @@ table 50114 "Application form.al"
         {
             Caption = 'Date of Submission';
         }
-        field(30; "ApplicationNumber"; Date)
+        field(30; "ApplicationNumber"; Code[50])
         {
             Caption = 'Application Number';
         }
