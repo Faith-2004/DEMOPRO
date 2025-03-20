@@ -11,6 +11,10 @@ page 50129 "HighSchool RC"
             {
                 ApplicationArea = All;
             }
+            part(AcademicsCues; "Academics Cues")
+            {
+                ApplicationArea = Basic, Suite;
+            }
 
 
         }
@@ -26,16 +30,22 @@ page 50129 "HighSchool RC"
                     ApplicationArea = All;
                     Caption = 'ApplicationList';
                     RunObject = page "ApplicationForm List";
+                    RunPageView = where("Application Status" = filter(Accepted));
                 }
+
                 action(AdmmittedStudents)
                 {
                     ApplicationArea = All;
                     Caption = 'Admitted Students';
                     RunObject = page "ApplicationForm List";
+                    RunPageView = where("Application Status" = filter(Accepted));
                 }
+
+
             }
 
         }
 
     }
+
 }
