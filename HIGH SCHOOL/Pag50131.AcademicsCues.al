@@ -22,19 +22,19 @@ page 50131 "Academics Cues"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Pending Students field.', Comment = '%';
-                    DrillDownPageId = "ApplicationForm List";
+                    DrillDownPageId = "ApplicationFormList";
                 }
                 field("Accepted Students"; Rec."Accepted Students")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Accepted Students field.', Comment = '%';
-                    DrillDownPageId = "ApplicationForm List";
+                    DrillDownPageId = "ApplicationFormList";
                 }
                 field("Rejected students"; Rec."Rejected students")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Rejected students field.', Comment = '%';
-                    DrillDownPageId = "ApplicationForm List";
+                    DrillDownPageId = "ApplicationFormList";
                 }
             }
         }

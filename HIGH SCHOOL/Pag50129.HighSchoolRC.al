@@ -29,7 +29,7 @@ page 50129 "HighSchool RC"
                 {
                     ApplicationArea = All;
                     Caption = 'ApplicationList';
-                    RunObject = page "ApplicationForm List";
+                    RunObject = page "ApplicationFormList";
                     RunPageView = where("Application Status" = filter(Accepted));
                 }
 
@@ -37,7 +37,7 @@ page 50129 "HighSchool RC"
                 {
                     ApplicationArea = All;
                     Caption = 'Admitted Students';
-                    RunObject = page "ApplicationForm List";
+                    RunObject = page "ApplicationFormList";
                     RunPageView = where("Application Status" = filter(Accepted));
                 }
 
