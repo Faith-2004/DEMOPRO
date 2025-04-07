@@ -3,7 +3,7 @@ page 50134 ClassList
     Caption = 'ClassList';
     PageType = List;
     SourceTable = Class;
-    
+
     layout
     {
         area(Content)
@@ -20,6 +20,21 @@ page 50134 ClassList
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the ClassName field.', Comment = '%';
                 }
+            }
+        }
+    }
+    actions
+
+    {
+
+        area(Processing)
+        {
+            action("Open ClassCard")
+            {
+                Caption = 'View Classes';
+                ApplicationArea = All;
+                RunObject = Page "ClassCard";
+                RunPageLink = "Class ID" = field("Class ID");
             }
         }
     }

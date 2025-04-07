@@ -3,7 +3,7 @@ page 50136 TeachersList
     Caption = 'TeachersList';
     PageType = List;
     SourceTable = Teachers;
-    
+
     layout
     {
         area(Content)
@@ -25,6 +25,21 @@ page 50136 TeachersList
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Department field.', Comment = '%';
                 }
+            }
+        }
+    }
+    actions
+
+    {
+
+        area(Processing)
+        {
+            action("Open TeachersCard")
+            {
+                Caption = 'View Teachers';
+                ApplicationArea = All;
+                RunObject = Page "TeachersCard";
+                RunPageLink = "TeacherID" = field(TeacherID);
             }
         }
     }
