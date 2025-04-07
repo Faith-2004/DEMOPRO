@@ -9,6 +9,7 @@ table 50102 ApplicationForm
         {
             Caption = 'REF Number';
         }
+
         field(2; "First Name"; Text[40])
         {
             Caption = 'First Name';
@@ -37,6 +38,7 @@ table 50102 ApplicationForm
         {
             Caption = 'DOB';
         }
+
     }
     keys
     {
