@@ -15,6 +15,7 @@ table 50114 AdmittedStudents
 
         field(2; "ApplicationID"; Code[20])
         {
+            TableRelation = "Student Applications".ApplicationID;
             Caption = 'ApplicationID';
         }
 
