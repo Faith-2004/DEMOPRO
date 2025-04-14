@@ -3,7 +3,8 @@ page 50144 BorrowersList
     Caption = 'BorrowersList';
     PageType = List;
     SourceTable = BookBorrowers;
-    
+    CardPageId = 50145;
+
     layout
     {
         area(Content)

@@ -3,6 +3,7 @@ page 50146 BookPatronList
     Caption = 'Patronlist';
     PageType = List;
     SourceTable = LibraryPatrons;
+    CardPageId = 50147;
 
     layout
     {

@@ -3,6 +3,7 @@ page 50129 ApplicationLists
     Caption = 'ApplicationList';
     PageType = List;
     SourceTable = "Student Applications";
+    CardPageId = 50131;
 
     layout
     {

@@ -92,6 +92,16 @@ page 50133 HighSchoolRolecenter
                 }
             }
         }
+        area(Embedding)
+        {
+            action(Setup)
+            {
+                ApplicationArea = Basic, Suite;
+                RunObjecT = page "Libr Setup";
+
+            }
+
+        }
     }
 
 }

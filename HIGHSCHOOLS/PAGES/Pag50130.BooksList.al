@@ -5,7 +5,8 @@ page 50130 BooksList
     PageType = List;
     SourceTable = LibraryBooks;
     UsageCategory = Lists;
-    
+    CardPageId = 50132;
+
     layout
     {
         area(Content)
