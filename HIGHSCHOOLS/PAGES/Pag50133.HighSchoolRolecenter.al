@@ -27,6 +27,12 @@ page 50133 HighSchoolRolecenter
                     RunObject = page "ApplicationLists";
 
                 }
+                action(AdmittedStudents)
+                {
+                    Caption = 'AdmittedList';
+                    ApplicationArea = All;
+                    RunObject = page "AdmittedList";
+                }
             }
             group(TimetableManagement)
             {

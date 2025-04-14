@@ -15,7 +15,16 @@ table 50117 "Student Applications"
         }
         field(3; DOB; Date)
         {
-            Caption = 'DOB';
+            trigger OnValidate()
+            var
+                Today: Date;
+                Age: Integer;
+            begin
+                Today := Today;
+                Age := Date2DMY(Today, 3) - Date2DMY("DOB", 3);
+                if Age < 13 then
+                    Error('Applicant must be at least 13 years old.');
+            end;
         }
         field(4; Gender; Option)
         {
