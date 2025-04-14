@@ -9,9 +9,9 @@ table 50124 Booklendings
         {
             Caption = 'LendingID';
         }
-        field(2; BorrowerID; Integer)
+        field(2; StudentID; Integer)
         {
-            Caption = 'BorrowerID';
+            Caption = 'StudentID';
         }
         field(3; Name; Text[100])
         {
@@ -29,15 +29,8 @@ table 50124 Booklendings
         {
             Caption = 'DueDate';
         }
-        field(7; BorrowingDate; Date)
-        {
-            Caption = 'BorrowingDate';
-        }
-        field(8; ReturnDate; Date)
-        {
-            Caption = 'ReturnDate';
-        }
-        field(9; Status; Option)
+
+        field(7; Status; Option)
         {
             OptionMembers = Open,PendingApproval,Approved,Rejected;
             OptionCaption = 'Open,PendingApproval,Approved,Rejected';

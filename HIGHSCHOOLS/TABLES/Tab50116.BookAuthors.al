@@ -9,9 +9,9 @@ table 50116 BookAuthors
         {
             Caption = 'AuthorID';
         }
-        field(2; AuthorName; Text[50])
+        field(2; Author; Text[50])
         {
-            Caption = 'AuthorName';
+            Caption = 'Author';
         }
 
     }

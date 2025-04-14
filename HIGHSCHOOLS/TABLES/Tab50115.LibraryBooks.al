@@ -2,14 +2,14 @@ table 50115 LibraryBooks
 {
     Caption = 'LibraryBooks';
     DataClassification = ToBeClassified;
-    
+
     fields
     {
         field(1; BooksId; Integer)
         {
             Caption = 'BooksId';
         }
-        field(2; BookName; Text[50])
+        field(2; Booktitle; Text[100])
         {
             Caption = 'BookName';
         }

@@ -2,7 +2,7 @@ table 50122 BookBorrowers
 {
     Caption = 'BookBorrowers';
     DataClassification = ToBeClassified;
-    
+
     fields
     {
         field(1; BorrowerID; Integer)

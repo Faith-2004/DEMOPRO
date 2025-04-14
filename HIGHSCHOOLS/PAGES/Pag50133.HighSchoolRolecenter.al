@@ -63,6 +63,34 @@ page 50133 HighSchoolRolecenter
                     RunObject = page "TimetableList";
                 }
             }
+            group(LibraryManagement)
+            {
+                action(Bookslist)
+                {
+                    Caption = 'Books';
+                    ApplicationArea = All;
+                    RunObject = page "BooksList";
+
+                }
+                action(BookAuthors)
+                {
+                    Caption = 'Authors';
+                    ApplicationArea = All;
+                    RunObject = page "AuthorsList";
+                }
+                action(BorrowersList)
+                {
+                    Caption = 'Borrowers';
+                    ApplicationArea = All;
+                    RunObject = page "BorrowersList";
+                }
+                action(Booklendings)
+                {
+                    Caption = 'Lendings';
+                    ApplicationArea = All;
+                    RunObject = page "LendingList";
+                }
+            }
         }
     }
 
