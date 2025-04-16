@@ -44,6 +44,20 @@ page 50151 SchoolCues
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Students Admitted field.', Comment = '%';
                 }
+                field("Disciplinary Cases;"; Rec."Disciplinary Cases")
+                {
+                    DrillDownPageId = "Disciplinary List";
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Students with Disciplinary Issues field.', Comment = '%';
+                }
+                field("Health Issues"; Rec."Health Issues")
+                {
+                    DrillDownPageId = "Student Medical Records";
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Students with health issues field.', Comment = '%';
+                }
+
+
 
             }
         }

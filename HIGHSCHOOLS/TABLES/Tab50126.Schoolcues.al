@@ -42,6 +42,21 @@ table 50126 "School cues"
             Caption = 'Total Books Pending Approval';
 
         }
+        field(6; "Disciplinary Cases"; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = Count("Displinary Issues");
+            Caption = 'Number of Disciplinaries';
+
+        }
+        field(7; "Health Issues"; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = Count("Student MedicalRecords");
+            Caption = 'Medical Records';
+
+        }
+
 
 
     }

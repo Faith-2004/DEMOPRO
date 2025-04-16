@@ -110,6 +110,15 @@ page 50133 HighSchoolRolecenter
                     RunObject = page "Clinic Visits";
                 }
             }
+            group(Disciplinary)
+            {
+                action(DisciplinaryIssues)
+                {
+                    Caption = 'Disciplinary Issues';
+                    ApplicationArea = All;
+                    RunObject = page "Disciplinary List";
+                }
+            }
         }
         area(Embedding)
         {
