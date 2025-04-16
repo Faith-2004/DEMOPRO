@@ -11,6 +11,10 @@ page 50133 HighSchoolRolecenter
             {
                 ApplicationArea = All;
             }
+            part(Cues; "SchoolCues")
+            {
+                ApplicationArea = Basic, Suite;
+            }
 
         }
     }
