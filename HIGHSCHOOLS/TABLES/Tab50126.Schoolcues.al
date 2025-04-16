@@ -10,6 +10,7 @@ table 50126 "School cues"
         {
             AutoIncrement = true;
 
+
         }
 
         field(2; "Students Approved"; Integer)

@@ -17,6 +17,7 @@ page 50151 SchoolCues
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Entry Number field.', Comment = '%';
+                    Visible = false;
                 }
 
                 field(BooksIssued; Rec.BooksIssued)
