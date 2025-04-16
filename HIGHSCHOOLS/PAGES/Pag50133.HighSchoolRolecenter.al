@@ -95,6 +95,21 @@ page 50133 HighSchoolRolecenter
                     RunObject = page "LendingList";
                 }
             }
+            group(MedicalRecords)
+            {
+                action(StudentMedicalRecords)
+                {
+                    Caption = 'Student Medical Records';
+                    ApplicationArea = All;
+                    RunObject = page "Student Medical Records";
+                }
+                action(ClinicVisits)
+                {
+                    Caption = 'Clinic Visits';
+                    ApplicationArea = All;
+                    RunObject = page "Clinic Visits";
+                }
+            }
         }
         area(Embedding)
         {
