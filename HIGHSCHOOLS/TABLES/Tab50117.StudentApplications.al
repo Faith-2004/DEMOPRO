@@ -2,7 +2,7 @@ table 50117 "Student Applications"
 {
     Caption = 'Student Applications';
     DataClassification = ToBeClassified;
-    DrillDownPageId = ApplicationCard;
+
 
     fields
     {
@@ -71,7 +71,7 @@ table 50117 "Student Applications"
         {
             Caption = 'Attachments ';
         }
-        field(14; Status; Option)
+        field(14; "Status"; Option)
         {
             DataClassification = ToBeClassified;
             OptionMembers = Pending,Approved,Rejected;

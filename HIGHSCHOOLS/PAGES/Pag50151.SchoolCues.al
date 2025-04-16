@@ -18,12 +18,7 @@ page 50151 SchoolCues
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Entry Number field.', Comment = '%';
                 }
-                field("Students Approved"; Rec."Students Approved")
-                {
-                    DrillDownPageId = Applicationlist;
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Total Students field.', Comment = '%';
-                }
+
                 field(BooksIssued; Rec.BooksIssued)
                 {
                     DrillDownPageId = LendingList;
@@ -42,6 +37,13 @@ page 50151 SchoolCues
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Total Books Pending Approval field.', Comment = '%';
                 }
+                field("Students Approved"; Rec."Students Approved")
+                {
+                    DrillDownPageId = ApplicationLists;
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Students Admitted field.', Comment = '%';
+                }
+
             }
         }
 

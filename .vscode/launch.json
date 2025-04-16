@@ -19,7 +19,7 @@
             "tenant": "default",
             "usePublicURLFromServer": true,
             "forceUpgrade": true,
-            "schemaUpdateMode": "ForceSync"
+            //"schemaUpdateMode": "ForceSync"
         }
     ]
 }

@@ -16,7 +16,7 @@ table 50126 "School cues"
         {
             FieldClass = FlowField;
             CalcFormula = Count("Student Applications" WHERE(Status = const(Approved)));
-            Caption = 'Total Students';
+            Caption = 'Students Approved';
 
         }
 
