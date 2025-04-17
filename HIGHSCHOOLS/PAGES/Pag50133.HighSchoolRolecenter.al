@@ -140,6 +140,11 @@ page 50133 HighSchoolRolecenter
 
                     RunObject = report "Student Reports";
                 }
+                action("StudentBooklendings")
+                {
+                    ApplicationArea = All;
+                    RunObject = report "StudentBooks Report";
+                }
 
             }
         }
