@@ -130,6 +130,19 @@ page 50133 HighSchoolRolecenter
             }
 
         }
-    }
+        area(Reporting)
+        {
+            group(Reports)
+            {
+                action("StudentRecords")
+                {
+                    ApplicationArea = Basic, Suite;
 
+                    RunObject = report "Student Reports";
+                }
+
+            }
+        }
+
+    }
 }
