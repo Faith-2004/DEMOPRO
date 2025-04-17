@@ -119,6 +119,21 @@ page 50133 HighSchoolRolecenter
                     RunObject = page "Disciplinary List";
                 }
             }
+            group(HouseAllocation)
+            {
+                action(Houses)
+                {
+                    Caption = 'Houses';
+                    ApplicationArea = All;
+                    RunObject = page "Houses List";
+                }
+                action(HouseAssignment)
+                {
+                    Caption = 'House Allocation';
+                    ApplicationArea = All;
+                    RunObject = page "House Assignment List";
+                }
+            }
         }
         area(Embedding)
         {
@@ -127,6 +142,16 @@ page 50133 HighSchoolRolecenter
                 ApplicationArea = Basic, Suite;
                 RunObjecT = page "Libr Setup";
 
+            }
+            action(HouseMaintenance)
+            {
+                ApplicationArea = All;
+                RunObject = page "House Maintenance List";
+            }
+            action(HouseMasters)
+            {
+                ApplicationArea = All;
+                RunObject = page "House Masters/Mistress List";
             }
 
         }
@@ -146,6 +171,15 @@ page 50133 HighSchoolRolecenter
                     RunObject = report "StudentBooks Report";
                 }
 
+            }
+        }
+        area(Processing)
+        {
+            action("HouseRooms")
+            {
+                ApplicationArea = All;
+                RunObject = page "HouseRoom List";
+                RunPageMode = View;
             }
         }
 
