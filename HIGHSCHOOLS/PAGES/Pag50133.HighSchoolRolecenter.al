@@ -170,6 +170,11 @@ page 50133 HighSchoolRolecenter
                     ApplicationArea = All;
                     RunObject = report "StudentBooks Report";
                 }
+                action("HouseAllocations")
+                {
+                    ApplicationArea = Basic, Suite;
+                    RunObject = report "Dormitory Report";
+                }
 
             }
         }
@@ -181,6 +186,28 @@ page 50133 HighSchoolRolecenter
                 RunObject = page "HouseRoom List";
                 RunPageMode = View;
             }
+            action("Classes")
+            {
+                ApplicationArea = All;
+                RunObject = page "ClassList";
+
+            }
+            action("Teachers")
+            {
+                ApplicationArea = All;
+                RunObject = page "TeachersList";
+            }
+            action("Patrons")
+            {
+                ApplicationArea = All;
+                RunObject = page "BookPatronList";
+            }
+            action("Authors")
+            {
+                ApplicationArea = All;
+                RunObject = page "AuthorsCard";
+            }
+
         }
 
     }
