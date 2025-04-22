@@ -220,6 +220,24 @@ page 50133 HighSchoolRolecenter
             }
 
         }
+        area(Creation)
+        {
+            action(Books)
+            {
+                ApplicationArea = All;
+                RunObject = page Bookscard;
+                RunPageMode = Create;
+
+            }
+            action(LibraryPatrons)
+            {
+                ApplicationArea = All;
+                RunObject = page BookPartonCard;
+                RunPageMode = Create;
+
+
+            }
+        }
 
     }
 }
