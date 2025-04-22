@@ -22,6 +22,11 @@ page 50156 "Disciplinary List"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Student ID field.', Comment = '%';
                 }
+                field(StudentName; Rec.StudentName)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Student Name field.';
+                }
                 field(InfractionType; Rec.InfractionType)
                 {
                     ApplicationArea = All;

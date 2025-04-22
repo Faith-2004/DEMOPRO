@@ -18,6 +18,10 @@ page 50157 "Disciplinary Card"
                 {
                     ApplicationArea = All;
                 }
+                field("StudentName"; Rec.StudentName)
+                {
+                    ApplicationArea = all;
+                }
                 field("InfractionType"; Rec."InfractionType")
 
                 {

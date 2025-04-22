@@ -175,6 +175,11 @@ page 50133 HighSchoolRolecenter
                     ApplicationArea = Basic, Suite;
                     RunObject = report "Dormitory Report";
                 }
+                action("Disciplinary Report")
+                {
+                    ApplicationArea = All;
+                    RunObject = report "Disciplinary Report";
+                }
 
             }
         }

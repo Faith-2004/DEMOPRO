@@ -14,19 +14,23 @@ table 50129 "Displinary Issues"
         {
             Caption = 'Student ID';
         }
-        field(3; "InfractionType"; Text[100])
+        field(3; StudentName; Text[100])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(4; "InfractionType"; Text[100])
         {
             Caption = 'Infraction Type';
         }
-        field(4; "ActionTaken"; Text[100])
+        field(5; "ActionTaken"; Text[100])
         {
             Caption = 'Action Taken';
         }
-        field(5; "Comments"; Text[250])
+        field(6; "Comments"; Text[250])
         {
             Caption = 'Comments';
         }
-        field(6; "Date"; Date)
+        field(7; "Date"; Date)
         {
             Caption = 'Date';
         }
