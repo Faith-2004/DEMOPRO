@@ -153,6 +153,12 @@ page 50133 HighSchoolRolecenter
                 ApplicationArea = All;
                 RunObject = page "House Masters/Mistress List";
             }
+            action(HousesList)
+            {
+                ApplicationArea = All;
+                RunObject = page "Houses List";
+
+            }
 
         }
         area(Reporting)
