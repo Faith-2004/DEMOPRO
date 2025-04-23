@@ -51,4 +51,34 @@ page 50149 LendingsCard
             }
         }
     }
+    actions
+    {
+        area(Processing)
+        {
+            action(Approve)
+            {
+                Caption = 'Approve';
+                Image = Approve;
+                ApplicationArea = All;
+
+                trigger OnAction()
+                var
+                    ApprovedRec: Record Booklendings;
+                begin
+                    ApprovedRec.Init();
+                    ApprovedRec.TransferFields(Rec);
+                    ApprovedRec.Insert();
+
+                    ApprovedRec.Delete()
+
+                end;
+
+
+            }
+        }
+    }
+
+
 }
+
+

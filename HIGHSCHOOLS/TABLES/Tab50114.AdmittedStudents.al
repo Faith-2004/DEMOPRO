@@ -7,16 +7,17 @@ table 50114 AdmittedStudents
     fields
     {
 
-        field(1; "Student ID"; Code[20])
+        field(1; "ApplicationID"; Code[20])
         {
-            Caption = 'StudentID';
+
+            TableRelation = "Student Applications".ApplicationID;
+            Caption = 'ApplicationID';
 
         }
 
-        field(2; "ApplicationID"; Code[20])
+        field(2; "Student ID"; Code[20])
         {
-            TableRelation = "Student Applications".ApplicationID;
-            Caption = 'ApplicationID';
+            Caption = 'StudentID';
         }
 
         field(3; "Full Name"; Text[100])

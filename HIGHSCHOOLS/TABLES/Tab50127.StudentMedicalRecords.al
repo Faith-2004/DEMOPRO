@@ -10,9 +10,10 @@ table 50127 "Student MedicalRecords"
             Caption = 'Record ID';
             AutoIncrement = true;
         }
-        field(2; "Student ID"; Integer)
+        field(2; "ApplicationID"; Integer)
         {
             Caption = 'Student ID';
+            TableRelation = AdmittedStudents;
         }
         field(3; "Medical Condition"; Text[100])
         {
