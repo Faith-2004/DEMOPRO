@@ -2,7 +2,7 @@ page 50126 AdmittedList
 {
     Caption = 'AdmittedList';
     PageType = List;
-    SourceTable = AdmittedStudents;
+    SourceTable = "AdmittedStudents";
     UsageCategory = Lists;
     CardPageId = 50128;
 
@@ -12,7 +12,7 @@ page 50126 AdmittedList
         {
             repeater(General)
             {
-                field("Student ID"; Rec."Student ID")
+                field("Student ID"; Rec."ApplicationID")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the StudentID field.', Comment = '%';
@@ -95,9 +95,10 @@ page 50126 AdmittedList
                 Image = Print;
                 trigger OnAction()
                 var
-                    AdmittedStudent: Record "AdmittedStudents";
+                    AdmittedStudent: Record "Student Applications";
                 begin
-                    AdmittedStudent := Rec;
+
+
                     Report.RunModal(50128, true, true, AdmittedStudent);
                 end;
             }

@@ -76,11 +76,7 @@ page 50129 ApplicationLists
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Attachments field.', Comment = '%';
                 }
-                field(Status; Rec.Status)
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Status field.', Comment = '%';
-                }
+
             }
         }
     }
@@ -93,8 +89,9 @@ page 50129 ApplicationLists
                 Caption = 'View Student';
                 ApplicationArea = All;
                 RunObject = Page "ApplicationCard";
-                RunPageLink = ApplicationID = field(ApplicationID);
+
             }
+
         }
     }
 }

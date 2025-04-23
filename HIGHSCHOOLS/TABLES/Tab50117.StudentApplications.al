@@ -9,6 +9,7 @@ table 50117 "Student Applications"
         field(1; ApplicationID; Integer)
         {
             Caption = 'ApplicationID';
+            AutoIncrement = false;
         }
         field(2; FullName; Text[50])
         {

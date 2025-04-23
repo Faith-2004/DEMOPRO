@@ -14,7 +14,9 @@ page 50131 ApplicationCard
 
                 field(ApplicationID; Rec.ApplicationID)
                 {
+
                     ApplicationArea = All;
+
                     ToolTip = 'Specifies the value of the Application Id field.', Comment = '%';
                 }
                 field("Full Name"; Rec."FullName")
@@ -77,12 +79,36 @@ page 50131 ApplicationCard
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Attachments field.', Comment = '%';
                 }
-                field(Status; Rec.Status)
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Status field.', Comment = '%';
-                }
+
             }
         }
     }
+    actions
+    {
+        area(Processing)
+        {
+            action(Approve)
+            {
+                Caption = 'Approve';
+                Image = Approve;
+                ApplicationArea = All;
+
+                trigger OnAction()
+                var
+                    ApprovedRec: Record "Student Applications";
+                begin
+                    ApprovedRec.Init();
+                    ApprovedRec.TransferFields(Rec);
+                    ApprovedRec.Insert();
+
+                    ApprovedRec.Delete()
+
+                end;
+
+
+            }
+        }
+    }
+
+
 }

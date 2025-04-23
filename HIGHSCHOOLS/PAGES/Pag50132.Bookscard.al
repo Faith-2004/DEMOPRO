@@ -3,7 +3,7 @@ page 50132 Bookscard
     Caption = 'Bookscard';
     PageType = Card;
     SourceTable = LibraryBooks;
-    
+
     layout
     {
         area(Content)
@@ -11,9 +11,10 @@ page 50132 Bookscard
             group(General)
             {
                 Caption = 'General';
-                
+
                 field(BooksId; Rec.BooksId)
                 {
+
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the BooksId field.', Comment = '%';
                 }

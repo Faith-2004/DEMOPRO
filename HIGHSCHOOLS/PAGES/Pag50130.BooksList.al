@@ -15,6 +15,7 @@ page 50130 BooksList
             {
                 field(BooksId; Rec.BooksId)
                 {
+
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the BooksId field.', Comment = '%';
                 }
