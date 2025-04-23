@@ -12,14 +12,22 @@ table 50121 Timetable
         field(2; SubjectID; Integer)
         {
             Caption = 'SubjectID';
+            TableRelation = Subjects;
         }
         field(3; TeacherID; Integer)
         {
             Caption = 'TeacherID';
+            TableRelation = Teachers;
         }
         field(4; ClassID; Integer)
         {
-            Caption = 'ClassID';
+            Caption = 'Class';
+            TableRelation = Class;
+        }
+        field(8; MyField; Text[20])
+        {
+            Caption = 'Name';
+            DataClassification = ToBeClassified;
         }
         field(5; Day; Option)
         {

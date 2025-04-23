@@ -17,6 +17,7 @@ table 50117 "Student Applications"
         {
             Caption = 'ApplicationID';
 
+
         }
         field(3; FullName; Text[50])
         {
@@ -84,7 +85,9 @@ table 50117 "Student Applications"
             DataClassification = ToBeClassified;
             OptionMembers = Pending,Approved,Rejected;
             OptionCaption = 'Pending,Approved,Rejected';
+
         }
+
     }
     keys
     {
