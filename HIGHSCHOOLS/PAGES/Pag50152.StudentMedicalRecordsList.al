@@ -15,7 +15,7 @@ page 50152 "Student Medical Records"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Record ID field.', Comment = '%';
                 }
-                field("Student ID"; Rec."ApplicationID")
+                field("Student ID"; Rec."Student ID")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Student ID field.', Comment = '%';
@@ -50,7 +50,7 @@ page 50152 "Student Medical Records"
 
                 trigger OnAction()
                 begin
-                    Message('Escalation notice sent to parent for Student ID: %1', Rec."ApplicationID");
+                    Message('Escalation notice sent to parent for Student ID: %1', Rec."Student ID");
                 end;
             }
         }

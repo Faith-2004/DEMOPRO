@@ -17,7 +17,7 @@ page 50153 "Student MedicalRecords"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Record ID field.', Comment = '%';
                 }
-                field("Student ID"; Rec."ApplicationID")
+                field("Student ID"; Rec."Student ID")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Student ID field.', Comment = '%';
