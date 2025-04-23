@@ -6,16 +6,23 @@ table 50117 "Student Applications"
 
     fields
     {
-        field(1; ApplicationID; Integer)
+        field(1; EntryNumber; Integer)
+        {
+            DataClassification = ToBeClassified;
+
+        }
+
+
+        field(2; ApplicationID; Integer)
         {
             Caption = 'ApplicationID';
-            AutoIncrement = false;
+
         }
-        field(2; FullName; Text[50])
+        field(3; FullName; Text[50])
         {
             Caption = 'FullName';
         }
-        field(3; DOB; Date)
+        field(4; DOB; Date)
         {
             trigger OnValidate()
             var
@@ -28,51 +35,51 @@ table 50117 "Student Applications"
                     Error('Applicant must be at least 13 years old.');
             end;
         }
-        field(4; Gender; Option)
+        field(5; Gender; Option)
         {
             OptionMembers = Male,Female;
             OptionCaption = 'Male,Female';
             DataClassification = ToBeClassified;
         }
-        field(5; Nationality; Text[50])
+        field(6; Nationality; Text[50])
         {
             Caption = 'Nationality';
         }
-        field(6; "KCPE Index"; Integer)
+        field(7; "KCPE Index"; Integer)
         {
             Caption = 'KCPE Index';
         }
-        field(7; "Previous School"; Text[50])
+        field(8; "Previous School"; Text[50])
         {
             Caption = 'Previous School';
         }
-        field(8; ParentName; Text[60])
+        field(9; ParentName; Text[60])
         {
             Caption = 'ParentName';
         }
-        field(9; Relationship; Option)
+        field(10; Relationship; Option)
         {
             OptionMembers = Mother,Father,Guardian;
             OptionCaption = 'Mother,Father,Guardian';
             DataClassification = ToBeClassified;
         }
-        field(10; Phone1; Text[15])
+        field(11; Phone1; Text[15])
         {
             Caption = 'Phone1';
         }
-        field(11; Phone2; Text[15])
+        field(12; Phone2; Text[15])
         {
             Caption = 'Phone2';
         }
-        field(12; Email; Text[50])
+        field(13; Email; Text[50])
         {
             Caption = 'Email';
         }
-        field(13; "Attachments "; Blob)
+        field(14; "Attachments "; Blob)
         {
             Caption = 'Attachments ';
         }
-        field(14; "Status"; Option)
+        field(15; "Status"; Option)
         {
             DataClassification = ToBeClassified;
             OptionMembers = Pending,Approved,Rejected;
@@ -86,4 +93,15 @@ table 50117 "Student Applications"
             Clustered = true;
         }
     }
+    trigger OnInsert()
+    var
+        LastApplication: Record "Student Applications";
+    begin
+
+        if LastApplication.FindLast() then
+            Rec."ApplicationID" := LastApplication."ApplicationID" + 1
+        else
+            Rec."ApplicationID" := 1;
+    end;
+
 }

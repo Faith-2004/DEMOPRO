@@ -14,6 +14,12 @@ table 50125 "Libr Setup"
             Caption = 'Card Number';
             TableRelation = "No. Series";
         }
+        field(3; StudentApplicationNo; Code[20])
+        {
+            Caption = 'AppNo.';
+            DataClassification = ToBeClassified;
+            TableRelation = "No. Series";
+        }
     }
     keys
     {

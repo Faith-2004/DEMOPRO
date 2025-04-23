@@ -11,6 +11,12 @@ page 50131 ApplicationCard
             group(General)
             {
                 Caption = 'General';
+                field(EntryNumber; Rec.EntryNumber)
+                {
+                    ApplicationArea = all;
+                    Visible = false;
+                }
+
 
                 field(ApplicationID; Rec.ApplicationID)
                 {

@@ -22,6 +22,10 @@ page 50150 "Libr Setup"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Card Number field.', Comment = '%';
                 }
+                field(StudentApplicationNo; Rec.StudentApplicationNo)
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }
