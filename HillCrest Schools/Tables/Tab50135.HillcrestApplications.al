@@ -43,4 +43,18 @@ table 50135 HillcrestApplications
     {
         key(PK; "Application ID") { Clustered = true; }
     }
+    trigger OnInsert()
+    var
+        NoSeriesMgt: Codeunit NoSeriesManagement;
+        NoSeriesSetup: Record "No. Series";
+        SeriesCode: Code[20];
+    begin
+        if "Application ID" = '' then begin
+
+            SeriesCode := 'APPNO.';
+
+
+            "Application ID" := NoSeriesMgt.GetNextNo(SeriesCode, Today(), true);
+        end;
+    end;
 }
