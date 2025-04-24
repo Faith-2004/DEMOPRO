@@ -37,6 +37,21 @@ page 50173 "HillCrest RoleCenter"
             }
 
         }
+        area(Embedding)
+        {
+            action(classes)
+            {
+                ApplicationArea = All;
+                Caption = 'Classes';
+                RunObject = page Class;
+            }
+            action(teachers)
+            {
+                ApplicationArea = All;
+                Caption = 'Teachers';
+                RunObject = page Teachers;
+            }
+        }
 
     }
 }
