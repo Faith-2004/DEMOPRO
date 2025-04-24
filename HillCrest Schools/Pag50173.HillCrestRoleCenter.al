@@ -35,6 +35,27 @@ page 50173 "HillCrest RoleCenter"
                     RunObject = page HCRecords;
                 }
             }
+            group(Finance)
+            {
+                action(Fees)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Student Fees';
+                    RunObject = page "Invoice List";
+                }
+                action(Sponsorship)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Scholarships';
+                    RunObject = page "Scholarship List";
+                }
+                action(FeeStructure)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Fee Structure';
+                    RunObject = page "Fee Structure";
+                }
+            }
 
         }
         area(Embedding)

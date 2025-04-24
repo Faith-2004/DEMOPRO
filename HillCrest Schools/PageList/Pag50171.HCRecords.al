@@ -78,6 +78,12 @@ page 50171 HCRecords
                 {
                     ApplicationArea = All;
                 }
+                field("Sponsorship Type"; Rec."Sponsorship Type")
+                {
+                    ApplicationArea = All;
+
+                }
+
             }
         }
 

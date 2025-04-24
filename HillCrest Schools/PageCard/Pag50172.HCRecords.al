@@ -74,6 +74,10 @@ page 50172 HCRecordsCard
                 {
                     ApplicationArea = All;
                 }
+                field("Sponsorship Type"; Rec."Sponsorship Type")
+                {
+                    ApplicationArea = all;
+                }
             }
 
             group("Other")

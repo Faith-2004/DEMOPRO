@@ -69,6 +69,12 @@ table 50136 HillCrestRecords
         {
             DataClassification = ToBeClassified;
         }
+        field(17; "Sponsorship Type"; Option)
+        {
+            OptionMembers = SelfSponsored,Scholarship;
+            OptionCaption = 'SelfSponsored, Scholarship';
+        }
+
 
     }
 
