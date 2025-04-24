@@ -10,23 +10,41 @@ page 50170 HCApllications
             group("Student Info")
             {
                 field("Application ID"; Rec."Application ID")
-                { ApplicationArea = All; }
+                {
+                    ApplicationArea = All;
+                }
                 field("Full Name"; Rec."Full Name")
-                { ApplicationArea = All; }
+                {
+                    ApplicationArea = All;
+                }
                 field("Date of Birth"; rec."Date of Birth")
-                { ApplicationArea = All; }
+                {
+                    ApplicationArea = All;
+                }
                 field("Gender"; Rec.Gender)
-                { ApplicationArea = All; }
+                {
+                    ApplicationArea = All;
+                }
                 field("Course Applied"; Rec."Course Applied")
-                { ApplicationArea = All; }
+                {
+                    ApplicationArea = All;
+                }
                 field("Application Date"; Rec."Application Date")
-                { ApplicationArea = All; }
+                {
+                    ApplicationArea = All;
+                }
                 field("Nationality"; Rec."Nationality")
-                { ApplicationArea = All; }
+                {
+                    ApplicationArea = All;
+                }
                 field("KCPE Index"; Rec."KCPE Index")
-                { ApplicationArea = All; }
+                {
+                    ApplicationArea = All;
+                }
                 field("Previous School"; Rec."Previous School")
-                { ApplicationArea = All; }
+                {
+                    ApplicationArea = All;
+                }
             }
 
             group("Parent/Guardian Info")
@@ -42,19 +60,29 @@ page 50170 HCApllications
             group("Contact Info")
             {
                 field("Phone 1"; Rec."Phone 1")
-                { ApplicationArea = All; }
+                {
+                    ApplicationArea = All;
+                }
                 field("Phone 2"; Rec."Phone 2")
-                { ApplicationArea = All; }
+                {
+                    ApplicationArea = All;
+                }
                 field("Email"; Rec.Email)
-                { ApplicationArea = All; }
+                {
+                    ApplicationArea = All;
+                }
             }
 
             group("Other")
             {
                 field("Status"; Rec.Status)
-                { ApplicationArea = All; }
+                {
+                    ApplicationArea = All;
+                }
                 field("Attachments"; Rec.Attachments)
-                { ApplicationArea = All; }
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }
