@@ -58,7 +58,7 @@ page 50170 HCApllications
             {
                 ApplicationArea = All;
                 Caption = 'Approve and Admit';
-                Image = Accept;
+                Image = Approve;
                 trigger OnAction()
                 var
                     Processor: Codeunit "ApplicationsProcessor";
