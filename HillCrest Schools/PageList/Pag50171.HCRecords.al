@@ -41,7 +41,45 @@ page 50171 HCRecords
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Enrollment Date field.', Comment = '%';
                 }
+
+                field("Nationality"; Rec."Nationality")
+                {
+                    ApplicationArea = All;
+                }
+                field("KCPE Index"; Rec."KCPE Index")
+                {
+                    ApplicationArea = All;
+                }
+                field("Previous School"; Rec."Previous School")
+                {
+                    ApplicationArea = All;
+                }
+                field("Parent Name"; Rec."Parent Name")
+                {
+                    ApplicationArea = All;
+                }
+                field("Relationship"; Rec."Relationship")
+                {
+                    ApplicationArea = All;
+                }
+                field("Phone 1"; Rec."Phone 1")
+                {
+                    ApplicationArea = All;
+                }
+                field("Phone 2"; Rec."Phone 2")
+                {
+                    ApplicationArea = All;
+                }
+                field("Email"; Rec.Email)
+                {
+                    ApplicationArea = All;
+                }
+                field("Attachments"; Rec.Attachments)
+                {
+                    ApplicationArea = All;
+                }
             }
         }
+
     }
 }

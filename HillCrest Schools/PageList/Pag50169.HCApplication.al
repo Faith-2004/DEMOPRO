@@ -5,46 +5,60 @@ page 50169 HCApplication
     SourceTable = HillcrestApplications;
     CardPageId = 50170;
 
+
     layout
     {
-        area(Content)
+        area(content)
         {
-            repeater(General)
+            repeater(Group)
             {
                 field("Application ID"; Rec."Application ID")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Application ID field.', Comment = '%';
                 }
                 field("Full Name"; Rec."Full Name")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Full Name field.', Comment = '%';
                 }
-                field("Date of Birth"; Rec."Date of Birth")
+                field("Course Applied"; Rec."Course Applied")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Date of Birth field.', Comment = '%';
                 }
-                field(Gender; Rec.Gender)
+                field("Status"; Rec.Status)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Gender field.', Comment = '%';
                 }
-                field("Class Applied"; Rec."Course Applied")
+                field("Nationality"; Rec."Nationality")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Course Applied field.', Comment = '%';
                 }
-                field("Application Date"; Rec."Application Date")
+                field("KCPE Index"; Rec."KCPE Index")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Application Date field.', Comment = '%';
                 }
-                field(Status; Rec.Status)
+                field("Previous School"; Rec."Previous School")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Status field.', Comment = '%';
+                }
+                field("Parent Name"; Rec."Parent Name")
+                {
+                    ApplicationArea = All;
+                }
+                field("Phone 1"; Rec."Phone 1")
+                {
+                    ApplicationArea = All;
+                }
+                field("Phone 2"; Rec."Phone 2")
+                {
+                    ApplicationArea = All;
+                }
+                field("Email"; Rec.Email)
+                {
+                    ApplicationArea = All;
+                }
+                field("Attachments"; Rec.Attachments)
+                {
+                    ApplicationArea = All;
                 }
             }
         }

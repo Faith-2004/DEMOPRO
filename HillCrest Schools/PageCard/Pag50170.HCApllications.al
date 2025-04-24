@@ -3,62 +3,70 @@ page 50170 HCApllications
     Caption = 'HCApllications';
     PageType = Card;
     SourceTable = HillcrestApplications;
-
     layout
     {
-        area(Content)
+        area(content)
         {
-            group(General)
+            group("Student Info")
             {
-                Caption = 'General';
-
                 field("Application ID"; Rec."Application ID")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Application ID field.', Comment = '%';
-                }
+                { ApplicationArea = All; }
                 field("Full Name"; Rec."Full Name")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Full Name field.', Comment = '%';
-                }
-                field("Date of Birth"; Rec."Date of Birth")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Date of Birth field.', Comment = '%';
-                }
-                field(Gender; Rec.Gender)
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Gender field.', Comment = '%';
-                }
-                field("Class Applied"; Rec."Course Applied")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Course Applied field.', Comment = '%';
-                }
+                { ApplicationArea = All; }
+                field("Date of Birth"; rec."Date of Birth")
+                { ApplicationArea = All; }
+                field("Gender"; Rec.Gender)
+                { ApplicationArea = All; }
+                field("Course Applied"; Rec."Course Applied")
+                { ApplicationArea = All; }
                 field("Application Date"; Rec."Application Date")
+                { ApplicationArea = All; }
+                field("Nationality"; Rec."Nationality")
+                { ApplicationArea = All; }
+                field("KCPE Index"; Rec."KCPE Index")
+                { ApplicationArea = All; }
+                field("Previous School"; Rec."Previous School")
+                { ApplicationArea = All; }
+            }
+
+            group("Parent/Guardian Info")
+            {
+                field("Parent Name"; Rec."Parent Name")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Application Date field.', Comment = '%';
                 }
-                field(Status; Rec.Status)
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Status field.', Comment = '%';
-                }
+                field("Relationship"; Rec."Relationship")
+                { ApplicationArea = All; }
+            }
+
+            group("Contact Info")
+            {
+                field("Phone 1"; Rec."Phone 1")
+                { ApplicationArea = All; }
+                field("Phone 2"; Rec."Phone 2")
+                { ApplicationArea = All; }
+                field("Email"; Rec.Email)
+                { ApplicationArea = All; }
+            }
+
+            group("Other")
+            {
+                field("Status"; Rec.Status)
+                { ApplicationArea = All; }
+                field("Attachments"; Rec.Attachments)
+                { ApplicationArea = All; }
             }
         }
     }
+
     actions
     {
         area(processing)
         {
             action(ApproveAndAdmit)
             {
-                ApplicationArea = All;
                 Caption = 'Approve and Admit';
-                Image = Approve;
+                ApplicationArea = All;
                 trigger OnAction()
                 var
                     Processor: Codeunit "ApplicationsProcessor";
@@ -70,5 +78,4 @@ page 50170 HCApllications
             }
         }
     }
-
 }

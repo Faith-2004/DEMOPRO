@@ -19,6 +19,16 @@ codeunit 50102 ApplicationsProcessor
                 Student.Gender := Application.Gender;
                 Student."Enrolled Course" := Application."Course Applied";
                 Student."Enrollment Date" := Today();
+                Student."Nationality" := Application."Nationality";
+                Student."KCPE Index" := Application."KCPE Index";
+                Student."Previous School" := Application."Previous School";
+                Student."Parent Name" := Application."Parent Name";
+                Student."Relationship" := Application."Relationship";
+                Student."Phone 1" := Application."Phone 1";
+                Student."Phone 2" := Application."Phone 2";
+                Student."Email" := Application."Email";
+                Student."Attachments" := Application."Attachments";
+
                 Student.Insert();
 
                 Application.Delete();

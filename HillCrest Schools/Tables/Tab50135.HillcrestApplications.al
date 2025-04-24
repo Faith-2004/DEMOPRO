@@ -38,6 +38,44 @@ table 50135 HillcrestApplications
             OptionMembers = Pending,Approved,Rejected;
             DataClassification = ToBeClassified;
         }
+
+        field(8; "Nationality"; Text[50])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(9; "KCPE Index"; Code[20])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(10; "Previous School"; Text[100])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(11; "Parent Name"; Text[100])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(12; "Relationship"; Text[50])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(13; "Phone 1"; Text[30])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(14; "Phone 2"; Text[30])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(15; "Email"; Text[100])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(16; "Attachments"; Media)
+        {
+            DataClassification = ToBeClassified;
+        }
+
     }
 
     keys
