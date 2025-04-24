@@ -26,7 +26,13 @@ page 50173 "HillCrest RoleCenter"
                 {
                     ApplicationArea = All;
                     Caption = 'Student Applications';
-                    RunObject = page HCApllications;
+                    RunObject = page HCApplication;
+                }
+                action(StudentsAdmitted)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Student Records';
+                    RunObject = page HCRecords;
                 }
             }
 

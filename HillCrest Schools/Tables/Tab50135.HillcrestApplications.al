@@ -26,6 +26,7 @@ table 50135 HillcrestApplications
         }
         field(5; "Course Applied"; Code[20])
         {
+            Caption = 'Class Applied';
             DataClassification = ToBeClassified;
         }
         field(6; "Application Date"; Date)

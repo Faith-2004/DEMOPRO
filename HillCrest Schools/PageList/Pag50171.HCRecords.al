@@ -3,6 +3,7 @@ page 50171 HCRecords
     Caption = 'HCRecords';
     PageType = List;
     SourceTable = HillCrestRecords;
+    CardPageId = 50172;
 
     layout
     {

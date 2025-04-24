@@ -32,7 +32,7 @@ page 50170 HCApllications
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Gender field.', Comment = '%';
                 }
-                field("Course Applied"; Rec."Course Applied")
+                field("Class Applied"; Rec."Course Applied")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Course Applied field.', Comment = '%';
@@ -50,4 +50,25 @@ page 50170 HCApllications
             }
         }
     }
+    actions
+    {
+        area(processing)
+        {
+            action(ApproveAndAdmit)
+            {
+                ApplicationArea = All;
+                Caption = 'Approve and Admit';
+                Image = Accept;
+                trigger OnAction()
+                var
+                    Processor: Codeunit "ApplicationsProcessor";
+                begin
+                    Rec.Status := Rec.Status::Approved;
+                    Rec.Modify();
+                    Processor.ApproveAndTransfer(Rec."Application ID");
+                end;
+            }
+        }
+    }
+
 }

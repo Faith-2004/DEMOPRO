@@ -7,6 +7,7 @@ table 50136 HillCrestRecords
     {
         field(1; "Student ID"; Code[20])
         {
+            Caption = 'Reg No.';
             DataClassification = ToBeClassified;
         }
         field(2; "Full Name"; Text[100])
@@ -24,6 +25,7 @@ table 50136 HillCrestRecords
         }
         field(5; "Enrolled Course"; Code[20])
         {
+            Caption = 'Class Enrolled';
             DataClassification = ToBeClassified;
         }
         field(6; "Enrollment Date"; Date)

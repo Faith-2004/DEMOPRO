@@ -3,7 +3,8 @@ page 50169 HCApplication
     Caption = 'HCApplication';
     PageType = List;
     SourceTable = HillcrestApplications;
-    
+    CardPageId = 50170;
+
     layout
     {
         area(Content)
@@ -30,7 +31,7 @@ page 50169 HCApplication
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Gender field.', Comment = '%';
                 }
-                field("Course Applied"; Rec."Course Applied")
+                field("Class Applied"; Rec."Course Applied")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Course Applied field.', Comment = '%';
