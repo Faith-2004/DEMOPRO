@@ -12,6 +12,10 @@ page 50173 "HillCrest RoleCenter"
                 ApplicationArea = All;
 
             }
+            part(Cues; "School Cues")
+            {
+                ApplicationArea = Basic, suite;
+            }
 
 
         }
@@ -69,6 +73,16 @@ page 50173 "HillCrest RoleCenter"
                     ApplicationArea = all;
                     Caption = 'Subject Teachers';
                     RunObject = page "Subject Teacher";
+                }
+
+            }
+            group(DisciplinaryRecords)
+            {
+                action(Disciplinary)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Disciplinary Records';
+                    RunObject = page "School Disciplinary";
                 }
 
             }
