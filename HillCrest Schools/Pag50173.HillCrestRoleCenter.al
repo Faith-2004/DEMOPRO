@@ -153,6 +153,12 @@ page 50173 "HillCrest RoleCenter"
                 RunObject = report "StudentRecords Report";
 
             }
+            action("Scholarship Report")
+            {
+                ApplicationArea = All;
+                Caption = 'Scholarship Report';
+                RunObject = report "Scholarship Reports";
+            }
 
         }
 
