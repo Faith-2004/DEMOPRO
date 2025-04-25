@@ -43,4 +43,27 @@ page 50188 Timetable
             }
         }
     }
+    trigger OnInsertRecord(BelowxRec: Boolean): Boolean
+    var
+        TimetableRec: Record "Timetable";
+    begin
+
+        TimetableRec.Reset();
+        TimetableRec.SetRange("TeacherID");
+        TimetableRec.SetRange("Day");
+        TimetableRec.SetRange("Start Time");
+        if TimetableRec.FindFirst() then
+            Error('Teacher %1 is already assigned at this time slot.');
+
+
+        TimetableRec.Reset();
+        TimetableRec.SetRange("ClassID");
+        TimetableRec.SetRange("Day");
+        TimetableRec.SetRange("Start Time");
+        TimetableRec.SetRange("End Time");
+
+        if TimetableRec.FindFirst() then
+            Error('Class %1 already has a subject scheduled at this time.');
+    end;
+
 }

@@ -56,6 +56,22 @@ page 50173 "HillCrest RoleCenter"
                     RunObject = page "Fee Structure";
                 }
             }
+            group(TimetableManagement)
+            {
+                action(Timetables)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Timetable';
+                    RunObject = page Timetable;
+                }
+                action(SubjectTeachers)
+                {
+                    ApplicationArea = all;
+                    Caption = 'Subject Teachers';
+                    RunObject = page "Subject Teacher";
+                }
+
+            }
 
         }
         area(Embedding)
@@ -71,6 +87,19 @@ page 50173 "HillCrest RoleCenter"
                 ApplicationArea = All;
                 Caption = 'Teachers';
                 RunObject = page Teachers;
+            }
+            action(subjects)
+            {
+                ApplicationArea = All;
+                Caption = 'Subjects';
+                RunObject = page subjects;
+            }
+
+            action(departments)
+            {
+                ApplicationArea = All;
+                Caption = 'Departments';
+                RunObject = page departments;
             }
         }
 

@@ -21,7 +21,7 @@ table 50142 "Class Timetable"
         field(3; "Subject ID"; Code[20])
         {
             DataClassification = ToBeClassified;
-            TableRelation = "Subject"."Subject ID";
+            TableRelation = "AllSubjects".SubjectID;
         }
 
         field(4; "Teacher ID"; Code[20])
