@@ -3,6 +3,7 @@ page 50178 "Fee Structure"
     Caption = 'Fee Structure';
     PageType = List;
     SourceTable = "Fee Structure";
+    CardPageId = 50179;
 
     layout
     {

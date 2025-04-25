@@ -116,6 +116,45 @@ page 50173 "HillCrest RoleCenter"
                 RunObject = page departments;
             }
         }
+        area(Processing)
+        {
+            action("Fee Structure")
+            {
+                ApplicationArea = All;
+                Caption = 'Fee Structure';
+                RunObject = page FeeStructure;
+            }
+            action("SchoolTeachers")
+            {
+                ApplicationArea = All;
+                Caption = 'Teachers';
+                RunObject = page Teachers;
+
+            }
+            action("invoices")
+            {
+                ApplicationArea = All;
+                Caption = 'Student Invoices';
+                RunObject = page "Invoice List";
+            }
+            action("subject teachers")
+            {
+                ApplicationArea = All;
+                Caption = 'Subject Teachers';
+                RunObject = page "Subject Teacher";
+            }
+        }
+        area(Reporting)
+        {
+            action("Student Records")
+            {
+                ApplicationArea = all;
+                Caption = 'Student Reports';
+                RunObject = report "StudentRecords Report";
+
+            }
+
+        }
 
     }
 }

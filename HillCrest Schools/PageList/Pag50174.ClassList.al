@@ -3,6 +3,7 @@ page 50174 Class
     Caption = 'ClassList';
     PageType = List;
     SourceTable = "Student Classes";
+    CardPageId = 50175;
 
     layout
     {

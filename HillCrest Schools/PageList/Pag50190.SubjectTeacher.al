@@ -3,7 +3,8 @@ page 50190 "Subject Teacher"
     Caption = 'Subject Teacher';
     PageType = List;
     SourceTable = SubjectTeacher;
-    
+    CardPageId = 50191;
+
     layout
     {
         area(Content)

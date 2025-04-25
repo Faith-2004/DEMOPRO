@@ -3,6 +3,7 @@ page 50188 Timetable
     Caption = 'Timetable';
     PageType = List;
     SourceTable = "Class Timetable";
+    CardPageId = 50189;
 
     layout
     {

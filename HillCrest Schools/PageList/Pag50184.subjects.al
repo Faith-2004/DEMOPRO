@@ -3,7 +3,9 @@ page 50184 subjects
     Caption = 'subjects';
     PageType = List;
     SourceTable = AllSubjects;
-    
+    CardPageId = 50185;
+
+
     layout
     {
         area(Content)

@@ -5,6 +5,7 @@ page 50192 "School Disciplinary"
     PageType = List;
     SourceTable = "Disciplinary Records";
     UsageCategory = Administration;
+    CardPageId = 50193;
 
     layout
     {

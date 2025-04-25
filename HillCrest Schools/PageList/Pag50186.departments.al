@@ -3,6 +3,7 @@ page 50186 departments
     Caption = 'departments';
     PageType = List;
     SourceTable = Departments;
+    CardPageId = 50187;
 
     layout
     {

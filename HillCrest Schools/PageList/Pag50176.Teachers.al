@@ -3,6 +3,7 @@ page 50176 Teachers
     Caption = 'Teachers';
     PageType = List;
     SourceTable = "School Teachers";
+    CardPageId = 50177;
 
     layout
     {

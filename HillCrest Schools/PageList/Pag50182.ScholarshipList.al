@@ -5,6 +5,7 @@ page 50182 "Scholarship List"
     PageType = List;
     SourceTable = Scholarship;
     UsageCategory = Administration;
+    CardPageId = 50183;
 
     layout
     {

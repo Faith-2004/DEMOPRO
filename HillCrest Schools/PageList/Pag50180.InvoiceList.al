@@ -3,6 +3,7 @@ page 50180 "Invoice List"
     Caption = 'Invoice List';
     PageType = List;
     SourceTable = "Fee Invoice";
+    CardPageId = 50181;
 
     layout
     {
