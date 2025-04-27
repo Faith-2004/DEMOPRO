@@ -86,6 +86,22 @@ page 50173 "HillCrest RoleCenter"
                 }
 
             }
+            group(Medicals)
+            {
+                action(StudentMedicalRecords)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Medical Records';
+                    RunObject = page "studentMedical records";
+
+                }
+                action(ClinicalRecords)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Clinical Records';
+                    RunObject = page "Clinical Records";
+                }
+            }
 
         }
         area(Embedding)
