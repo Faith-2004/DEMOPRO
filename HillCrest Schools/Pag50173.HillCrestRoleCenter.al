@@ -106,6 +106,13 @@ page 50173 "HillCrest RoleCenter"
         }
         area(Embedding)
         {
+            action(SETUP)
+            {
+                ApplicationArea = All;
+                Caption = 'SETUP';
+                RunObject = page "HillCrest Setup";
+
+            }
             action(classes)
             {
                 ApplicationArea = All;

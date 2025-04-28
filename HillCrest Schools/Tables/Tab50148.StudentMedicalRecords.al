@@ -41,7 +41,7 @@ table 50148 "StudentMedicalRecords"
             DataClassification = ToBeClassified;
             Caption = 'Immunization History';
         }
-        field(7; NoSeries; Integer)
+        field(7; " No.Series"; Integer)
         {
             DataClassification = ToBeClassified;
         }
@@ -55,18 +55,5 @@ table 50148 "StudentMedicalRecords"
             Clustered = true;
         }
     }
-    trigger OnInsert()
-    var
-        NoSeriesMgt: Codeunit NoSeriesManagement;
-        NoSeriesSetup: Record "No. Series";
-        SeriesCode: Code[20];
-    begin
-        if "Record ID" = '' then begin
 
-            SeriesCode := 'MEDREC';
-
-
-            "Record ID" := NoSeriesMgt.GetNextNo(SeriesCode, Today(), true);
-        end;
-    end;
 }
