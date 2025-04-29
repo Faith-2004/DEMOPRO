@@ -52,7 +52,35 @@ table 50147 "SchoolCues"
             FieldClass = FlowField;
             CalcFormula = count("Disciplinary Records");
         }
+        field(9; "Total Borrowed Books"; Integer)
+        {
+
+            FieldClass = FlowField;
+            CalcFormula = Count("Book Transactions" WHERE(Status = const(Approved)));
+            Caption = 'Total Borrowed Books';
+        }
+        field(10; "Available Books"; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = Count("books" WHERE("Borrowed" = const(false)));
+            Caption = 'Available Books';
+        }
+        field(11; "Rejected Approvals"; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = count("Book Transactions" WHERE(Status = const(RejectedApprovals)));
+            Caption = 'Rejected Approvals';
+        }
+        field(13; "Pending Approvals"; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = count("Book Transactions" WHERE(Status = const(PendingApproval)));
+            Caption = 'Rejected Books';
+        }
+
     }
+
+
     keys
     {
         key(PK; "Entry No.")
