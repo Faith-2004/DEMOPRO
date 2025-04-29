@@ -43,7 +43,7 @@ table 50149 "Clinical Records"
             Caption = 'Is Emergency Case?';
             Editable = true;
         }
-        field(7; " No.Series"; Integer)
+        field(7; "No.Series"; Integer)
         {
             DataClassification = ToBeClassified;
         }

@@ -42,7 +42,7 @@ page 50198 Clinicalrecords
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Is Emergency Case? field.', Comment = '%';
                 }
-                field("No.Series"; Rec." No.Series")
+                field("No.Series"; Rec."No.Series")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the NoSeries  field.', Comment = '%';

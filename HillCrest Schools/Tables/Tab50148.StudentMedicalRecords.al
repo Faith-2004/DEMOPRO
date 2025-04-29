@@ -14,7 +14,7 @@ table 50148 "StudentMedicalRecords"
         field(2; "Student ID"; Code[20])
         {
             DataClassification = ToBeClassified;
-            TableRelation = HillCrestRecords."Student ID"; // Ensure HillCrestRecords table exists and has "Student ID"
+            TableRelation = HillCrestRecords."Student ID";
             Caption = 'Student ID';
         }
 
@@ -41,7 +41,7 @@ table 50148 "StudentMedicalRecords"
             DataClassification = ToBeClassified;
             Caption = 'Immunization History';
         }
-        field(7; " No.Series"; Integer)
+        field(7; "No.Series"; Integer)
         {
             DataClassification = ToBeClassified;
         }
@@ -55,5 +55,4 @@ table 50148 "StudentMedicalRecords"
             Clustered = true;
         }
     }
-
 }

@@ -41,7 +41,7 @@ page 50195 "studentMedical records"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Immunization History field.', Comment = '%';
                 }
-                field("No.Series"; Rec." No.Series")
+                field("No.Series"; Rec."No.Series")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the NoSeries  field.', Comment = '%';
