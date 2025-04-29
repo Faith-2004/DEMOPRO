@@ -3,6 +3,7 @@ page 50216 "StudentLibrary Setup"
     Caption = 'StudentLibrary Setup';
     PageType = List;
     SourceTable = "SchoolLibrary Setup";
+    CardPageId = 50217;
 
     layout
     {

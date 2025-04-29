@@ -3,6 +3,7 @@ page 50208 authorList
     Caption = 'authorList';
     PageType = List;
     SourceTable = author;
+    CardPageId = 50209;
 
     layout
     {

@@ -89,6 +89,34 @@ page 50173 "HillCrest RoleCenter"
                 }
 
             }
+            group(LibraryManagement)
+            {
+                action(Books)
+                {
+                    ApplicationArea = all;
+                    Caption = 'Library Books';
+                    RunObject = page Books;
+
+                }
+                action(Staff)
+                {
+                    ApplicationArea = all;
+                    Caption = 'Patrons';
+                    RunObject = page "LibraryStaff List";
+                }
+                action(Students)
+                {
+                    ApplicationArea = all;
+                    Caption = 'Students';
+                    RunObject = page LIbStudentsList;
+                }
+                action(booktrans)
+                {
+                    ApplicationArea = all;
+                    Caption = 'Book Lendings';
+                    RunObject = page "Book Transactions";
+                }
+            }
             group(DisciplinaryRecords)
             {
                 action(Disciplinary)
@@ -125,6 +153,12 @@ page 50173 "HillCrest RoleCenter"
                 Caption = 'SETUP';
                 RunObject = page "HillCrest Setup";
 
+            }
+            action(LibSetup)
+            {
+                ApplicationArea = all;
+                Caption = 'Library Setup';
+                RunObject = page "StudentLibrary Setup";
             }
             action(classes)
             {

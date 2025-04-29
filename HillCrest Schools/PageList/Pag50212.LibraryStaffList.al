@@ -3,6 +3,7 @@ page 50212 "LibraryStaff List"
     Caption = 'LibraryStaff List';
     PageType = List;
     SourceTable = "Library Staff";
+    CardPageId = 50213;
 
     layout
     {

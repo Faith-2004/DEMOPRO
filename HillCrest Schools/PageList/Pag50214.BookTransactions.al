@@ -3,6 +3,7 @@ page 50214 "Book Transactions"
     Caption = 'Book Transactions';
     PageType = List;
     SourceTable = "Book Transactions";
+    CardPageId = 50215;
 
     layout
     {
