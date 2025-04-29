@@ -59,6 +59,13 @@ page 50173 "HillCrest RoleCenter"
                     Caption = 'Fee Structure';
                     RunObject = page "Fee Structure";
                 }
+                action(StudentFeeLedger)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Student Fee Ledger';
+                    RunObject = page "Student Ledger Entry";
+
+                }
             }
             group(TimetableManagement)
             {
@@ -181,6 +188,13 @@ page 50173 "HillCrest RoleCenter"
                 ApplicationArea = All;
                 Caption = 'Scholarship Report';
                 RunObject = report "Scholarship Reports";
+            }
+            action(FeeStatements)
+            {
+                ApplicationArea = All;
+                Caption = 'Fee Statement Report';
+                RunObject = report "Student Ledger Report";
+
             }
 
         }
