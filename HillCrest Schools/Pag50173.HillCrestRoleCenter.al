@@ -66,6 +66,12 @@ page 50173 "HillCrest RoleCenter"
                     RunObject = page "Student Ledger Entry";
 
                 }
+                action(CashBookEntry)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Cash Book';
+                    RunObject = page "CashBook";
+                }
             }
             group(TimetableManagement)
             {

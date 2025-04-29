@@ -5,9 +5,10 @@ table 50151 "Fee Ledger Entry"
 
     fields
     {
-        field(1; "Entry No."; Code[20])
+        field(1; "Entry No."; Integer)
         {
             DataClassification = ToBeClassified;
+            AutoIncrement = true;
 
         }
 
