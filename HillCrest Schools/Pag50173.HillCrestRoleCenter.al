@@ -7,16 +7,17 @@ page 50173 "HillCrest RoleCenter"
     {
         area(RoleCenter)
         {
-            part(Headline; "Headline RC Team Member")
+            part(RC104; "Headline RC Order Processor")
             {
                 ApplicationArea = All;
 
             }
+
+
             part(Cues; "School Cues")
             {
                 ApplicationArea = Basic, suite;
             }
-
 
         }
     }
@@ -243,6 +244,24 @@ page 50173 "HillCrest RoleCenter"
 
             }
 
+        }
+        area(Creation)
+        {
+            action(DisciplinaryRecord)
+            {
+                ApplicationArea = All;
+                Caption = 'Disciplinary';
+                RunObject = page "School Disciplinary";
+                RunPageMode = Create;
+            }
+            action(Fine)
+            {
+                ApplicationArea = All;
+                Caption = 'Fines';
+                RunObject = page Fines;
+                RunPageMode = Create;
+
+            }
         }
 
     }
