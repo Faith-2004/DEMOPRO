@@ -10,6 +10,8 @@ page 50194 "School Cues"
         {
             cuegroup(SchoolStatistics)
             {
+
+
                 field("Entry No."; Rec."Entry No.")
                 {
                     ApplicationArea = All;
@@ -35,6 +37,7 @@ page 50194 "School Cues"
                     ToolTip = 'Specifies the value of the Classes field.', Comment = '%';
                     DrillDownPageId = ClassList;
                 }
+
                 field("Subjects Offered"; Rec."Subjects Offered")
                 {
                     ApplicationArea = All;
@@ -60,10 +63,40 @@ page 50194 "School Cues"
                     ToolTip = 'Specifies the value of the Disciplinary Cases field.', Comment = '%';
                     DrillDownPageId = "School Disciplinary";
                 }
+            }
+            cuegroup(LibraryManagement)
+            {
+                field("Total Borrowed Books"; Rec."Total Borrowed Books")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Total Borrowed Books field.', Comment = '%';
+                    DrillDownPageId = "Book Transactions";
+
+                }
+                field("Available Books"; Rec."Available Books")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Available Books field.', Comment = '%';
+                    DrillDownPageId = Books;
+                }
+                field("Pending Approvals"; Rec."Pending Approvals")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Pending Approvals field.', Comment = '%';
+                    DrillDownPageId = "Book Transactions";
+
+                }
+                field("Rejected Approvals"; Rec."Rejected Approvals")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Rejected Approvals field.', Comment = '%';
+                    DrillDownPageId = "Book Transactions";
+                }
 
             }
         }
     }
+
     trigger OnOpenPage()
     var
         myInt: Integer;
