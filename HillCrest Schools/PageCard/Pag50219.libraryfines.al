@@ -3,7 +3,7 @@ page 50219 "library fines"
     Caption = 'library fines';
     PageType = Card;
     SourceTable = LibraryFines;
-    
+
     layout
     {
         area(Content)
@@ -11,7 +11,7 @@ page 50219 "library fines"
             group(General)
             {
                 Caption = 'General';
-                
+
                 field("Entry No."; Rec."Entry No.")
                 {
                     ApplicationArea = All;
@@ -21,6 +21,7 @@ page 50219 "library fines"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Student ID field.', Comment = '%';
+                    TableRelation = "Book Transactions".Fine;
                 }
                 field("Book ID"; Rec."Book ID")
                 {

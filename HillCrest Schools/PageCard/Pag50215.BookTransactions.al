@@ -65,4 +65,50 @@ page 50215 "BookTransactions"
             }
         }
     }
+    actions
+    {
+        area(Processing)
+        {
+
+            action(Submit)
+            {
+                Caption = 'Submit';
+                ApplicationArea = All;
+                Image = SendApprovalRequest;
+                Visible = (Rec.Status = Rec.Status::Open);
+                trigger OnAction()
+                begin
+                    Rec.Status := Rec.Status::PendingApproval;
+                    Rec.Modify();
+                end;
+            }
+            action(Approve)
+            {
+                Caption = 'Approved';
+                ApplicationArea = all;
+                Image = SendConfirmation;
+                Visible = rec.status = Rec.status::PendingApproval;
+                trigger OnAction()
+                var
+                    BkLending: Record "Book Transactions";
+                begin
+                    rec.Status := BkLending.Status::Approved;
+                end;
+            }
+            action(Reject)
+            {
+                Caption = 'Reject';
+                ApplicationArea = all;
+                Image = SendConfirmation;
+                Visible = rec.status = Rec.status::PendingApproval;
+                trigger OnAction()
+                var
+                    BkLending: Record "Book Transactions";
+                begin
+                    rec.Status := BkLending.Status::RejectedApprovals;
+                end;
+            }
+        }
+    }
 }
+
