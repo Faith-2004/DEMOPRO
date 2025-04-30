@@ -3,6 +3,7 @@ page 50218 Fines
     Caption = 'Fines';
     PageType = List;
     SourceTable = LibraryFines;
+    CardPageId = 50219;
 
     layout
     {

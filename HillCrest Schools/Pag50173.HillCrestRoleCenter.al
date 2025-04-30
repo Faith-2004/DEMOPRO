@@ -116,6 +116,12 @@ page 50173 "HillCrest RoleCenter"
                     Caption = 'Book Lendings';
                     RunObject = page "Book Transactions";
                 }
+                action(fines)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Library Fines';
+                    RunObject = page Fines;
+                }
             }
             group(DisciplinaryRecords)
             {

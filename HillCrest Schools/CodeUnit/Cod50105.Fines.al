@@ -7,7 +7,7 @@ codeunit 50105 Fines
         ExistingTransaction: Record "Book Transactions";
     begin
 
-        if ExistingTransaction.Get("BookTransaction", BookTransaction."Borrower ID") then begin
+        if ExistingTransaction.Get(BookTransaction."Borrower ID") then begin
             ExistingTransaction.SetRange("Borrower ID", BookTransaction."Borrower ID");
             ExistingTransaction.SetRange(Status, ExistingTransaction.Status::Approved);
             ExistingTransaction.SetFilter("Due Date", '<%1', Today);
