@@ -55,6 +55,11 @@ report 50107 "StudentRecords Report"
             column(SponsorshipType; "Sponsorship Type")
             {
             }
+
+            column(CompanyName; "CompanyInfo.Name")
+            {
+
+            }
         }
     }
     requestpage
