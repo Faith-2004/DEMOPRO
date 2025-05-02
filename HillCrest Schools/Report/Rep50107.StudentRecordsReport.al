@@ -56,12 +56,11 @@ report 50107 "StudentRecords Report"
             {
             }
 
-            column(CompanyName; "CompanyInfo.Name")
-            {
 
-            }
+
         }
     }
+
     requestpage
     {
         layout
