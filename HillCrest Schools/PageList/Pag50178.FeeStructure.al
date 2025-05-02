@@ -31,6 +31,11 @@ page 50178 "Fee Structure"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Class field.', Comment = '%';
                 }
+                field(category; Rec.category)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the category field.', Comment = '%';
+                }
                 field("Total Fee Amount"; Rec."Total Fee Amount")
                 {
                     ApplicationArea = All;

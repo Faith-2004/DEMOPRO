@@ -73,6 +73,12 @@ page 50173 "HillCrest RoleCenter"
                     Caption = 'Cash Book';
                     RunObject = page "CashBook";
                 }
+                action(feepayment)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Fee Payment';
+                    RunObject = page "fee payment";
+                }
             }
             group(TimetableManagement)
             {

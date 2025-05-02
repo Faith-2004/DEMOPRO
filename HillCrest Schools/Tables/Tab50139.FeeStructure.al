@@ -23,6 +23,12 @@ table 50139 "Fee Structure"
             Caption = 'Class';
             TableRelation = "Student Classes"."Class Name";
         }
+        field(7; category; Option)
+        {
+            OptionMembers = Tuition,Boarding,Transport,Development,Other;
+            OptionCaption = 'Tuition, Boarding, Transport, Development, Other';
+            DataClassification = ToBeClassified;
+        }
         field(5; "Total Fee Amount"; Decimal)
         {
             Caption = 'Total Fee Amount';
