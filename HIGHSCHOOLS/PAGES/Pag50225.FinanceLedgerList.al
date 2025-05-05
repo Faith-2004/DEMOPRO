@@ -3,6 +3,7 @@ page 50225 FinanceLedgerList
     Caption = 'FinanceLedgerList';
     PageType = List;
     SourceTable = "Financial Ledger";
+    CardPageId = 50226;
 
     layout
     {

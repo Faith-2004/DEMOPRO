@@ -1,10 +1,15 @@
 codeunit 50107 BankAccountPosting
 {
-    TableNo = BankAccount;
+    TableNo = "BankAccount";
+
+
 
     procedure PostBankPayment(StudentNo: Code[20]; Amount: Decimal; BankAccountNo: Code[20]; Description: Text[100])
     var
-        GenJnlLine: Record "Gen. Journal Line";
+        generalJournal: Record "Gen. Journal Line";
+        BankAccount: Record "Bank Account";
+
+
         GenJnlPost: Codeunit "Gen. Jnl.-Post";
         GenJnlTemplate: Record "Gen. Journal Template";
         GenJnlBatch: Record "Gen. Journal Batch";
@@ -14,19 +19,19 @@ codeunit 50107 BankAccountPosting
         GenJnlBatch.Get('GENERAL', 'DEFAULT');
 
 
-        GenJnlLine.Init();
-        GenJnlLine."Journal Template Name" := GenJnlTemplate.Name;
-        GenJnlLine."Journal Batch Name" := GenJnlBatch.Name;
-        GenJnlLine."Posting Date" := Today;
-        GenJnlLine."Document Type" := GenJnlLine."Document Type"::Payment;
-        GenJnlLine."Account Type" := GenJnlLine."Account Type"::"Bank Account";
-        GenJnlLine."Account No." := BankAccountNo;
-        GenJnlLine."Amount" := -Amount;
-        GenJnlLine.Description := Description;
+        generalJournal.Init();
+        generalJournal."Journal Template Name" := GenJnlTemplate.Name;
+
+        generalJournal."Posting Date" := Today;
+        generalJournal."Document Type" := generalJournal."Document Type"::Payment;
+        generalJournal."Account Type" := generalJournal."Account Type"::"Bank Account";
+        generalJournal."Account No." := BankAccountNo;
+        generalJournal."Amount" := -Amount;
+        generalJournal.Description := Description;
 
 
-        GenJnlLine.Insert();
-        GenJnlPost.Run(GenJnlLine);
+        generalJournal.Insert();
+        GenJnlPost.Run(generalJournal);
     end;
 
     procedure ReverseBankEntry(BankEntryNo: Integer)

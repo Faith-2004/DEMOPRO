@@ -37,6 +37,17 @@ page 50228 BankAccountCard
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Current Balance field.', Comment = '%';
                 }
+                field(Amount; Rec.Amount)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Amount field.', Comment = '%';
+                }
+                field(StudentID; Rec.StudentID)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Student ID field.', Comment = '%';
+                }
+
             }
         }
     }

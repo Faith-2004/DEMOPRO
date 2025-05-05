@@ -11,10 +11,18 @@ table 50164 Cashbook
             AutoIncrement = true;
             DataClassification = CustomerContent;
             TableRelation = Cashbook."Entry No.";
+
         }
+        field(8; StudentID; Text[100])
+        {
+            DataClassification = ToBeClassified;
+            TableRelation = "Financial Ledger"."Student No.";
+        }
+
+
         field(2; "Date"; Date)
         {
-
+            DataClassification = ToBeClassified;
         }
         field(3; "Amount"; Decimal)
         {

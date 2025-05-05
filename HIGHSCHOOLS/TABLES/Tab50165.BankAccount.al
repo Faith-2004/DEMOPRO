@@ -11,6 +11,11 @@ table 50165 "BankAccount"
             DataClassification = ToBeClassified;
             Caption = 'Bank Account No.';
         }
+        field(9; StudentID; Text[100])
+        {
+            DataClassification = ToBeClassified;
+            TableRelation = AdmittedStudents;
+        }
         field(2; "Name"; Text[100])
         {
             DataClassification = ToBeClassified;
@@ -28,6 +33,11 @@ table 50165 "BankAccount"
         {
             DataClassification = ToBeClassified;
         }
+        field(10; Amount; Decimal)
+        {
+            DataClassification = ToBeClassified;
+        }
+
     }
 
     keys

@@ -40,6 +40,41 @@ page 50133 HighSchoolRolecenter
                     RunObject = page "AdmittedList";
                 }
             }
+            group(Finance)
+            {
+                action(CashBookEntry)
+                {
+                    Caption = 'CashbookEntry';
+                    ApplicationArea = All;
+                    RunObject = page CashbookList;
+                }
+
+                action(FeePayment)
+                {
+                    Caption = 'FeeLedger';
+                    ApplicationArea = All;
+                    RunObject = page FinanceLedgerList;
+                }
+                action(BankAccount)
+                {
+                    Caption = 'BankPostings';
+                    ApplicationArea = All;
+                    RunObject = page "Bank Account List";
+                }
+                action(Banks)
+                {
+                    Caption = 'Banks';
+                    ApplicationArea = All;
+                    RunObject = page bankAccountList;
+                }
+                action(GeneralJournalLedger)
+                {
+                    Caption = 'General Journal Ledger';
+                    ApplicationArea = All;
+                    RunObject = page gjournalledger;
+                }
+
+            }
             group(TimetableManagement)
             {
                 action(TeachersList)

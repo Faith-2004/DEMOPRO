@@ -3,6 +3,7 @@ page 50223 CashbookList
     Caption = 'CashbookList';
     PageType = List;
     SourceTable = Cashbook;
+    CardPageId = 50224;
 
     layout
     {

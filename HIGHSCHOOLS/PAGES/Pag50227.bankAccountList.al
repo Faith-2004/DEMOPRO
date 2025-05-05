@@ -3,7 +3,8 @@ page 50227 bankAccountList
     Caption = 'bankAccountList';
     PageType = List;
     SourceTable = BankAccount;
-    
+    CardPageId = 50228;
+
     layout
     {
         area(Content)
@@ -34,6 +35,16 @@ page 50227 bankAccountList
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Current Balance field.', Comment = '%';
+                }
+                field(Amount; Rec.Amount)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Amount field.', Comment = '%';
+                }
+                field(StudentID; Rec.StudentID)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Student ID field.', Comment = '%';
                 }
             }
         }
