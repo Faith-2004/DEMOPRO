@@ -3,6 +3,7 @@ page 50229 CustomerInfo
     Caption = 'CustomerInfo';
     PageType = List;
     SourceTable = CustomersInfo;
+    CardPageId = 50232;
 
     layout
     {

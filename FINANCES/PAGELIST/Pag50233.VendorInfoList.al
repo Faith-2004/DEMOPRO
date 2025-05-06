@@ -3,6 +3,7 @@ page 50233 VendorInfoList
     Caption = 'VendorInfoList';
     PageType = List;
     SourceTable = VendorsInfo;
+    CardPageId = 50234;
 
     layout
     {

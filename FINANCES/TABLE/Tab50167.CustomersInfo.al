@@ -48,7 +48,7 @@ table 50167 CustomersInfo
         }
         field(10; "Customers Posting Group"; Code[20])
         {
-            DataClassification = CustomerContent;
+            DataClassification = ToBeClassified;
             TableRelation = "CustomersPosting Group";
         }
     }

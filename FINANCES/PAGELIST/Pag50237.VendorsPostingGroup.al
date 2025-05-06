@@ -3,6 +3,7 @@ page 50237 "VendorsPosting Group"
     Caption = 'VendorsPosting Group';
     PageType = List;
     SourceTable = "VendorsPosting Group";
+    CardPageId = 50238;
 
     layout
     {

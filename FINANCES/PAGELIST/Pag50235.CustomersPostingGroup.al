@@ -3,6 +3,7 @@ page 50235 "CustomersPosting Group"
     Caption = 'CustomersPosting Group';
     PageType = List;
     SourceTable = "CustomersPosting Group";
+    CardPageId = 50236;
 
     layout
     {
