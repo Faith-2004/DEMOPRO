@@ -38,6 +38,15 @@ page 50243 "Finance Module"
                     RunObject = page "Banking Info Card";
                 }
             }
+            group("Vendors")
+            {
+                action(VendorsInfo)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Vendors Info';
+                    RunObject = page "VendorsInfo";
+                }
+            }
             group("Posting Groups")
             {
                 action(CustomersPostingGroup)

@@ -4,6 +4,7 @@ page 50240 "BankInfo Card"
     PageType = Card;
     SourceTable = BankInfo;
 
+
     layout
     {
         area(Content)
@@ -70,4 +71,22 @@ page 50240 "BankInfo Card"
             }
         }
     }
+    actions
+    {
+        area(navigation)
+        {
+            group("Bank Postings")
+            {
+                action("View Transactions")
+                {
+                    Caption = 'View Transactions';
+                    Image = LedgerEntries;
+                    ApplicationArea = All;
+                    RunObject = page "BankPostings";
+                    RunPageLink = "Banking ID" = FIELD("Banking ID");
+                }
+            }
+        }
+    }
 }
+

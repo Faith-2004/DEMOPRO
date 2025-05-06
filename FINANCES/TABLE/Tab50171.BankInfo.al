@@ -66,6 +66,14 @@ table 50171 BankInfo
         {
             DataClassification = ToBeClassified;
         }
+
+        field(12; "Bank Balance"; Decimal)
+        {
+            FieldClass = FlowField;
+            CalcFormula = Sum("BanksPostings ".Amount WHERE("Banking ID" = FIELD("Banking ID")));
+            Caption = 'Bank Balance';
+            Editable = false;
+        }
     }
 
     keys
