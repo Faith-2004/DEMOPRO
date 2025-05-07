@@ -69,6 +69,14 @@ page 50243 "Finance Module"
                 }
             }
         }
+        area(Embedding)
+        {
+            action(Setup)
+            {
+                ApplicationArea = Basic, Suite;
+                RunObject = page "CustomerSetup";
+            }
+        }
     }
 }
 

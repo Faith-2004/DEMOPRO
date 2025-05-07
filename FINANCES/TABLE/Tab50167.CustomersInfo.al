@@ -10,6 +10,7 @@ table 50167 CustomersInfo
         {
             DataClassification = ToBeClassified;
             Caption = 'Customer ID';
+
         }
 
         field(2; "Name"; Text[100])
@@ -60,4 +61,27 @@ table 50167 CustomersInfo
             Clustered = true;
         }
     }
+    trigger OnInsert()
+    var
+        CustomerSetup: Record "CustomerSetup";
+        NoSeriesMgnt: Codeunit NoSeriesManagement;
+    begin
+        if "Customer ID" = '' then begin
+            CustomerSetup.Get();
+            NoSeriesMgnt.InitSeries(CustomerSetup."Customerid", CustomerSetup."CustomerID", WorkDate(), "Customer ID", CustomerSetup."CustomerID");
+        end;
+    end;
+
+
+
+    trigger OnRename()
+    var
+        CustomerSetup: Record "CustomerSetup";
+        NoSeriesMgnt: Codeunit NoSeriesManagement;
+    begin
+        if "Customer ID" = '' then begin
+            CustomerSetup.Get();
+            NoSeriesMgnt.InitSeries(CustomerSetup."Customerid", CustomerSetup."CustomerID", WorkDate(), "Customer ID", CustomerSetup."CustomerID");
+        end;
+    end;
 }
